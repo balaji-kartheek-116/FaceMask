@@ -92,6 +92,7 @@ def sequence_prediction(path):
 # Streamlit application
 def main():
     st.title('Face Mask and DeepFake Detection')
+    st.image("image.png")
 
     # Check if the user is authenticated
     is_authenticated = st.session_state.get("is_authenticated", False)
