@@ -160,11 +160,12 @@ def main():
                 with open(video_path, "wb") as f:
                     f.write(video_bytes)
 
-                st.write(prediction)
+                
                 # Predict whether the video is fake or real
                 prediction = sequence_prediction(video_path)
 
                 # Display the prediction result
+                st.write(prediction)
                 if prediction >= 0.5:
                     st.write('<span style="color:red">The predicted class of the video is FAKE</span>', unsafe_allow_html=True)
                 else:
