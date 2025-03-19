@@ -160,6 +160,7 @@ def main():
                 with open(video_path, "wb") as f:
                     f.write(video_bytes)
 
+                st.write(prediction)
                 # Predict whether the video is fake or real
                 prediction = sequence_prediction(video_path)
 
